@@ -1,0 +1,106 @@
+:root {   /*declarando cores como variaveis*/
+    --vermelho: #E50914; 
+    --preto: #141414;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+header .container {
+    display: flex; /*alinhando elementos em tela - flexbox*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /*espaço entre a logo e links de nav*/
+}
+
+header .logo {
+    margin-left: 2px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /*remove linhas dos links*/
+    color: #AAA;
+    margin-right: 30px;
+}
+
+header nav a:hover { /*qd passa o mouse em cima*/
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50))100%, url('/img/bgiluminado.jpg'); /*criando camada fina de preto cima da imagem pra contrastar com o texto*/
+
+    height:400px;
+    background-size: cover; /*ficar do tamanho da caixa*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.filme-principal .titulo {
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: serif , Arial, Helvetica, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all; /*transição entre animações*/
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container { /*conteudo principal*/
+    width: 75%; 
+}
+
+.box-filme {
+    width: 100%;
+    height: 100%;
+}
+
+.carrosel-filmes {
+    margin-top: 5px ;
+}

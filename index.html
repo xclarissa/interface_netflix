@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX CLONE</title>
+    <link rel="stylesheet" href="style/main.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+</head>
+<body>
+    <header>    
+        <div class="container">
+            <h2 class="logo">HORRORFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Clássicos</a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Top 10</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">O Iluminado</h3>
+                <p class="sinopse">Ele veio como zelador, mas este hotel tinha seus próprios guardiões, que estavam lá há muito tempo.</p>
+                <div class="botoes">
+                    <button role="button" class="botao" onclick="assistir()"> <!--caso esteja no celular, p/que reconheca botao usar "role"-->
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" onclick="maisInfo()">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/terror1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/terror10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/48c898a714.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script>
+       
+        function maisInfo() {
+            window.alert ("Durante o inverno, um homem é contratado para ficar como vigia em um hotel no Colorado e vai para lá com a mulher e seu filho. Porém, o contínuo isolamento começa a lhe causar sérios problemas mentais e ele vai se tornado cada vez mais agressivo e perigoso, ao mesmo tempo que seu filho passa a ter visões de acontecimentos ocorridos no passado, que também foram causados pelo isolamento excessivo. \n \n Stanley Kubrick - Director, Screenplay | Stephen King - Novel")
+        }
+    </script>
+</body>
+</html>
